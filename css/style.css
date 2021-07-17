@@ -1,0 +1,179 @@
+body{
+ margin: 0;
+ font-family: 'Open Sans', sans-serif;
+ background: url('/assets/background.jpg')  center top;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+.logo img{
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 50px;
+}
+.content{
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.content section{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.content h3{
+    color: red;
+    text-align: center;
+}
+
+.content p{
+    text-align: center;
+    color: white;
+}
+
+#img{
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.form{
+    background: black;
+    border:yellow solid 2px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 100px;
+}
+
+.form input{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border-radius: 200px;
+    border: 0;
+    padding: 8px 10px;
+    box-shadow: inset 0px 1px 4px rgb(0 0 0/75%);
+}
+
+input[type="submit"]{
+    width: 80%;
+    margin: 20px auto 10px auto;
+    display: block;
+    background: #FFD700;
+    border: none;
+    padding: 10px 0;
+    border-radius: 200px;
+    
+}
+#first-sec{
+    display: flex;
+    flex-direction:column;
+}
+
+#img-camisetas{
+    width: 80%;
+    align-self: center;
+}
+
+#third-sec
+{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    height: 100vh;
+    width: 100%;
+
+}
+
+.third-aside
+{
+ height: 300px;
+ width: 30%;
+}
+.third-aside img{
+    width: 100%;
+    padding: 5px;
+}
+
+.third-aside h3{
+    color: white;
+}
+
+footer{
+    height: 150px;
+    padding: 3px;
+    text-align: center;
+    background-color: #FFD700;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    display: flex;
+}
+
+footer p a{
+  text-decoration: none;
+  color: black;
+}
+#icone-coracao{
+    width: 20px;
+    height: 20px;
+}
+#icones-social{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 120px;
+    height: 35px;
+}
+#footer-icones{
+    display: block;
+    margin: 0 auto;
+}
+
+@media(max-width: 550px){
+
+    .content section{     
+        width: 100%;
+    }
+
+    #img-camisetas{
+        width: 70%;
+        align-self: center;
+    }
+
+     #third-sec{
+       
+        display: flex;
+        flex-direction:column;
+        
+    } 
+    .third-aside{
+        width: 100%;     
+        display: flex;
+        flex-direction:column; 
+      
+    }
+    .third-aside img{
+        width: 30%;
+        padding: 5px;
+        align-self: center;
+    }
+ 
+    footer{
+        margin-top: 20px;
+        
+    }
+
+    
+}
